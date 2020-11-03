@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>프랑스자수DIY패키지</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style type="text/css">
+    	body{overflow-x: hidden;}
+    	h1, h2,h3, a, p,button,label{font-family: 'Noto Serif KR', serif;}
+    	body,img,h1,a,p,ul{margin: 0}
+    	nav{width: 100%;background-color:white;height: 50px;position: fixed;opacity: 0.8;}
+    	nav .logo{height: 50px; line-height: 50px;width: 150px;float:left; text-align: center; font-size: 1.5em;font-weight: bold;}
+    	nav ol{width: 600px;height: 50px; float: right;margin-right: 5px;}
+    	nav li{list-style-type:none;width: 15%; height: 50px; text-align: right;line-height: 30px;float: left;}
+    	nav a{display: block;color:#F99E73;text-decoration: none;}
+    
+    	header,section,footer{width:100%;margin: auto;}
+    	header{height: 500px;}
+    	.bg_header{width:100%;height: 700px;  }
+    	.row{width:1300px; height: 700px;margin: auto;background-image: url(intro.jpg);background-repeat: no-repeat;background-size: cover;display: block;}
+        .row1{width: 100%}
+    	.row2{width:30%; float: right;margin: 50px;}
+    	.bg_no{background: none;float: left;}
+    	.button{float: right;margin-top: 0; margin-left: 390px;margin-right: 50px;}
+        h1 {padding-top:20px;}
+    	.price {padding-bottom:20px;float: right;color: #F99E73;}
+    	.name{text-align:left;padding-top:50px;color: #F99E73;}   
+    	p{margin-top:10px;margin-bottom: 20px;font-weight: 200;
+    		word-spacing:-2px;word-break: keep-all;line-height: 1.7;font-size: 1.2em;} 	
+    	.set{color: gray;}
+    	.you_t{margin-left:30px;margin-top: 10px;text-align: left}
+    	.who{text-align: center;margin:auto;padding-top: 20px;}
+    	.who_t1{margin-top:90px;margin-left:50px;text-align: left;}
+    	.who_t2{margin-top:90px;margin-left:50px;text-align: right;}
+    	.v{text-align: center;padding-bottom: 10px;font-weight: bold;color:white;}
+    	.foot2{text-align: left; color: white;font-size: 0.7em}
+
+       
+    	.add {width:180px; font-family:; border-radius: 4px;padding: 15px; background-color: #F99E73; border:none;text-align: center; font-weight: bold;transition: all 0.5s; cursor: pointer; margin: 5px;margin-left: 15px;}
+        .add span{cursor: pointer;display: inline-block;position: relative;transition: 0.5s;color: white;}
+        .add span: after { content: '\00bb';position: absolute;opacity: 0;top: 0;right: -20px;transition: 0.5s;}
+        .add:hover{background:white;}
+        .add:hover span {padding-right: 25px; color: gray;font-weight:bold;}
+        .add :hover span:after {opacity: 1;right: 0;}
+        .buy{width:180px; font-family:; border-radius: 4px;padding: 15px; background-color: #F99E73; border:none;text-align: center;font-weight: bold; transition: all 0.5s; cursor: pointer; margin: 5px;margin-left: 15px;}
+
+        .buy span{cursor: pointer;display: inline-block;position: relative;transition: 0.5s;color: white;}
+        .buy span: after { content: '\00bb';position: absolute;opacity: 0;top: 0;right: -20px;transition: 0.5s;} 
+        .buy:hover{background:white;}
+        .buy:hover span {padding-right: 25px;color: gray;font-weight:bold;}
+        .buy:hover span:after {opacity: 1;right: 0;}
+
+        .up{width:100px; font-family:; border-radius: 4px;padding: 15px; background-color: #F99E73; border:none;text-align: center; font-weight: bold;transition: all 0.5s; cursor: pointer; margin: 5px;margin-left: 15px;}
+        .up span{cursor: pointer;display: inline-block;position: relative;transition: 0.5s;color: white;}
+        .up span: after { content: '\00bb';position: absolute;opacity: 0;top: 0;right: -20px;transition: 0.5s;}
+        .up:hover{background:white;}
+        .up:hover span {padding-right: 25px; color: gray;font-weight:bold;}
+        .up :hover span:after {opacity: 1;right: 0;}
+
+        section{display: flex;}
+        
+        .bg_section1{width: 1300px;height:750px;background-image: url(bgp.png);  background-repeat: no-repeat;background-size: cover;}
+        .row3{ height: 700px;margin:auto;display: block;}
+        .row4{ width: 1300px;padding-top: 150px;padding-bottom:50px; }
+        .row4_1{margin:auto;display: block;}
+        .row4_2,.row4_3{padding-bottom:30px;}
+        .row4_4{width: 1300px;}
+        .row5{margin-bottom: 100px;width: 1300px;}
+        .row5_1{width:1300px;margin: auto;}
+        .row6{ margin: auto;padding-top: 50px;padding-bottom:50px;background-color:  #F99E73}
+        .row6_1{ padding-bottom:50px;background-color:  #F99E73}
+        .row7{ width: 1300px;margin: auto;padding-bottom:30px;padding-top: 150px;}
+        .row7_1{;margin:auto;display: block;}
+        .row8{margin-top:100px;margin-left:50px;}
+        .row8_1{display: block;margin-bottom: 30px;}
+        .row8_2{width:1300px;margin:auto;display: flex;}
+        .col2{width:33.3%; margin:5px;height: 300px;}
+        .flex{display: flex;}
+        
+        .col1{margin: auto; display: block;}
+        .content{float: right;margin-top: 250px;margin-right: 50px;}
+        .who1, .who2{margin: auto;display: flex;}
+        .video{margin:auto;}
+        .video1,.video2, .video3{padding-bottom: 50px;}
+        img{display: block;width: 100%}
+        .you{width: 400px;margin-top: 50px;margin-left:100px;  padding: 0;float: left;}
+        .sub1{width:400px;margin-top: 50px; margin-left:10px; }
+        .sub2{width:400px;margin:auto;display: block;padding-top: 50px;}
+        .sub3{width:400px;margin:auto;display: block;padding-top: 100px;}
+        .sub4{width:400px;margin:auto;padding-top: 50px;}
+        .who_1 {width:300px;padding:0;margin:0;}
+    	.who_2{width:300px;padding-left:40px;margin:0;}
+    	.insta{width: 100%;margin:auto;display: block;margin-bottom: 100px;}
+    	.kit1{width: 800px;margin: auto; }
+    	.kit2{width:800px; margin:auto;padding-top: 70px;padding-bottom: 200px;}
+
+    	.stitch2{ width: 80%; margin: auto;display: block; }
+    	.stitch2_2{width: 80%;margin: auto;display: block;}
+    	.sub6{ width: 500px;padding-top:100px;padding-bottom:50px;margin: auto;display: block;}
+    	
+    	
+
+     .tab_content { top:50%;left:50%;transform:translate(4%,5%);font-size:12px;margin: auto;}
+        input[type="radio"]{display: none;}
+        input[type="radio"] + label{display: inline-block;padding: 20px;background: #fbecbf;color:#ffffff;font-size:14px;font-weight: bold;cursor:pointer;border-radius: 4px 4px 0 0;}
+        input[type="radio"]:checked + label {background: #fbecbf;color:#F99E73;}
+        .conbox {width:1000px;height:1800px;background: #fbecbf;margin: auto;display:none;} 
+        .con2{height:600px;}
+        input[id="tab01"]:checked ~ .con1 {display:block;} 
+        input[id="tab02"]:checked ~ .con2 {display:block;}
+
+     
+	.item input[id*="slide"] {display:none;}
+
+	.item .slidewrap {max-width:800px;margin:auto;overflow:hidden;}
+	.item .slidelist {white-space:nowrap;font-size:0;}
+	.item .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+	.item .slidelist > li > a {display:block;position:relative;}
+	.item .slidelist > li > a img {width:100%;}
+
+	
+	.item .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+	.item .slidelist .left {left:30px;background:url('./img/left.png') center center / 100% no-repeat;}
+	.item .slidelist .right {right:30px;background:url('./img/right.png') center center / 100% no-repeat;}
+
+	.item input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.item input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.item input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+
+    footer{width:1300px;margin: auto;display:flex;}
+	.row9{background-color:gray;height: 200px;}
+	.row9_1{width: 60%; margin: 0 auto;}
+	.row9_2{width: 20%; margin-top: 50px;}
+	 h3{text-align:left;color: white;}
+        .foot{font-size: 1em;}
+    h2{text-align: left;color:#F99E73;}
+    </style>
+</head>
+<body>
+	<nav >
+		<div class="logo" >
+			<a href="index2.html">French Diy</a> 
+		</div>
+		<ol>
+			<li>
+				<a href="#a1">소개</a>
+			</li>
+			<li>
+				<a href="#a2" >후기</a>
+			</li>
+				<li>
+				<a href="#a3" >구성품</a>
+			</li>
+			<li>
+				<a href="#a4" >동영상</a>
+			</li>
+				<li>
+				<a href="#a5" >스티치</a>
+			</li>
+			<li>
+				<a href="#a6" >완성</a>
+			</li>
+		</ol>
+	</nav>
+<header class="bg_header" id="up">
+	<div class="row">
+	<div class="row1">
+	 <div class="row2">
+		<h1 class="name">내 손안의 프랑스 감성 DIY 자수 패키지</h1>
+ 		 <p class="set"> 손거울 + 파우치(동전지갑) 세트<br> 튜토리얼 영상제공</p>
+ 		 <h1 class="price">15000원</h1></div>
+ 		<div class="button">
+	     <button class="add"><span> ADD TO CART</span> </button>
+ 		 <button class="buy"><span> BUY NOW</span></button>
+	    </div>
+	</div>
+	
+    </div>
+</header>
+<section class="bg_section1 flex" id="a1" >
+	
+	<div class="row3"  >
+	   <div class="col1">
+		<div class="you">
+		<img src="you.png">
+	   </div>
+      <div class="content">
+		<div class="sub1">
+		<img src="sub1.png">
+	    </div>
+		<p class="you_t">직접 자수로 새겨 프랑스 감성을 손에서 느껴보세요.<br>
+        단순 소지품에 직접 자수를 새겨 보면 어떨까요?<br>
+        패키지 상품에 도안과 함께 튜토리얼 동영상이 있어<br> 
+        누구나 쉽게 할 수 있어요.</p>
+	 </div>
+	</div>
+	</div>
+   
+</section>
+<section class="row4" id="a2">
+	<div class="row4_1" >
+	<div class="sub2">
+      <img src="sub2.png">
+	</div>
+	<p class="who"> 프랑스 자수하는 분들을 소개합니다. 어떻게 프랑스 자수를 시작했는지 볼까요?</p>
+   </div>
+</section>
+<section class="row4_2">
+	<div class="who1">
+	<div class="who_1">
+		<img src="who_1.png"></div>
+	<div><p class="who_t1">저는 프랑스 자수를 해보고 싶었어요.<br>
+			시도하기 어려웠는데 diy패키지와 동영상안내,<br>
+		천에 미리 그려진 도안을 보고 시작했어요!</p>
+	</div></div>
+	</section>
+
+<section class="row4_3">
+    <div class="who2">
+	<div><p class="who_t2"> 취미생활을 하고 싶은데, 바쁜 생활로 준비하는게 어렵고,<br> 따로 어딜가서 배우는게 힘들었어요. 하지만 DIY패키지는 인터넷 주문하고,<br> 동영상만 보면 되서 쉽고, 편했어요!</p>
+	</div>
+	<div class="who_2">
+		<img src="who_2.png"></div>
+	</div>
+</section>
+<section class="row4_4">
+	<div class="insta">
+      <img src="insta.png">		
+	</div>
+</section>
+<section class="row5" id="a3">
+	<div class="sub3" >
+		<img src="sub3.png">
+	</div>
+</section>
+<section class="row5_1">
+	<div class="row5_1">
+		<div class="kit1">
+			<img src="kit1.png">
+		</div>
+		<div class="kit2">
+			<img src="kit2.png">
+		</div>
+	</div>
+</section>
+
+<section class="row6" id="a4">
+	<div class="sub4">
+		<img src="sub4.png">
+	</div>
+</section>
+<section class="row6_1">
+	<div class="video">
+	<div class="video1">
+		<p class="v"> 프랑스 자수를 처음 시작해보신 분들을 위한<br> ‘로망캔디’ 작가님의 기초 스티치 강의</p>
+    		<iframe width="560" height="315" src="https://www.youtube.com/embed/gnd2qTe5-zo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video2">
+    		<p class="v">로라플라워 파우치</p>
+    		<iframe width="560" height="315" src="https://www.youtube.com/embed/PP2mOH5EHyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+    </div>
+    <div class="video3">
+    	<p class="v">카멜리아 손거울</p>
+    	<video width="560" height="315" controls>
+        <source src="video_3.mp4" type="video/mp4">
+
+    	</video>
+    </div>
+	</div>
+</section>
+
+<section class="row7" id="a5">
+<div class="row7_1">
+<div class="tab_content">
+	<input type="radio" name="tabmenu" id="tab01" checked>
+	<label for="tab01">파우치</label>
+	<input type="radio" name="tabmenu" id="tab02">
+	<label for="tab02">손거울</label>	
+	<div class="conbox con1">
+         <div class="stitch2">
+		<img src="stitch2.png">
+	    </div>
+	</div>
+	<div class="conbox con2">
+        <div class="stitch2_2">
+		<img src="stitch2_2.png">
+	    </div>
+	</div>
+</div>
+</div>
+</section>
+
+<section class="row8" id="a6">
+	<div class="sub6"><img src="sub6.png">
+	</div>
+</section>
+
+<section class="row8_1" id="a6">
+	<div>
+	<div class="item">
+		<input type="radio" name="slide" id="slide01" checked>
+		<input type="radio" name="slide" id="slide02">
+		<input type="radio" name="slide" id="slide03">
+
+		<div class="slidewrap">
+			<ul class="slidelist">
+				<li>
+					<a>
+						<label for="slide03" class="left"></label>
+						<img src="slide01.png">
+						<label for="slide02" class="right"></label>
+					</a>
+				</li>
+				<li>
+					<a>
+						<label for="slide01" class="left"></label>
+						<img src="slide02.png">
+						<label for="slide03" class="right"></label>
+					</a>
+				</li>
+				<li>
+					<a>
+						<label for="slide02" class="left"></label>
+						<img src="slide03.png">
+						<label for="slide01" class="right"></label>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</section>
+<section class="row8_2">
+	<div class="col2 ">
+		<img src="04.png">
+	</div>
+		<div class="col2 ">
+		<img src="05.png">
+	</div>
+		<div class="col2 ">
+		<img src="06.jpg">
+	</div>
+</section>
+<footer class="row9">
+	  <div class="row9_1">
+	  <h2 class="foot1"> 내 손안의 프랑스 감성 DIY 자수 패키지 </h2>
+ 
+ 	  <h3 class="foot">천가게에서 합리적 가격과 친절한 도안,<br>설명으로 새로운 취미를 시작해보세요!</h3>
+ 	  <p class="foot2">Copyright by 1000gage.co.kr . All rights reserved.
+ 	  </p></div>
+ 	  <div class="row9_2">
+	  <button class="up"><a href="#up"><span>맨위로</span></a>
+	  </button></div>
+</footer>
+</body>
+</html>
